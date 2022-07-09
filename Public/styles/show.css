@@ -1,0 +1,187 @@
+body{
+    background-color: #f6e9d7;
+}
+.showContainer{
+        display: flex;
+         margin-top: 10px;
+        flex-wrap: wrap;
+        
+    }
+    .col2{
+        flex: 4;
+        min-width:280px;
+        border: 20px solid whitesmoke;
+        box-shadow: 5px 4px 5px orange;
+        border-radius: 5%;
+    }
+    .col1{
+        flex: 5;
+        min-width:260px;
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+    .col2 img{
+        width:100%;
+        min-width: 280px;
+        height: 90vh;
+        border-radius: 2%;
+        box-shadow: 5px 4px 5px orange;
+    }
+    #prices{
+        font-size:large;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: space-between;
+        color: black;
+    }
+    #price2{
+        font-size: large;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+    }
+    #qty{
+        font-size:large;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: space-between;
+    }
+    #qty1{
+        padding-left: 8px;
+        padding-right: 8px;
+        border: 3px solid orange;
+        border-radius: 4px;
+        background-color: orange;
+        
+    }
+    .option{
+        height: 40px;
+    }
+    /* .option:hover{
+        box-shadow: 2px 2px 2px 2px orange;
+        height: 40px;
+    } */
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+     .selector{
+         display: flex;
+         justify-content: space-between;
+       } 
+    .des{
+        text-align: justify;
+        font-size: 20px;
+        color:midnightblue;
+        text-shadow: 1px 1px 1px darkorange;
+        font-weight:normal;
+        font-family:'Times New Roman', Times, serif;
+    }
+    .name{
+        font-size:xx-large;
+        font-weight: bolder;
+        font-family:Arial, Helvetica, sans-serif;
+        color: hotpink;
+    }
+    .priceRating{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #price1{
+      font-size: x-large;
+      font-weight: bold;
+    }
+    #star1{
+       font-weight: bolder;
+       font-size: larger;
+       background-color: green;;
+        color: wheat;
+       padding-left: 5px;
+       padding-right: 5px;
+       padding-bottom: 2px;
+       padding-top: 2px;
+       border-radius: 2px;
+       box-shadow:2px 2px 2px 2px green ;
+      
+    }
+    #star1:hover{
+         background-color: orangered;
+         color: white;
+    }
+    .reviews1{
+        margin-top: 18px;
+        font-size: larger;
+        color: grey;
+    }
+    #description{
+        font-size: larger;
+        font-weight: 600;
+        color: orangered;
+    }
+    #button1{
+        background-color: orangered;
+        border: 5px orangered solid;
+        border-radius: 5px;
+        color: white;
+    }
+
+    #taxes{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+    }
+    .papaji{
+        display: flex;
+        justify-content:flex-end;
+        /* margin-right: 5%; */
+        margin-bottom: 5px;
+    }
+    .papaji1{
+        min-width: 280px;
+        padding: 8px 24px;
+        border: 8px solid honeydew;
+        border-radius: 5px;
+        box-shadow: 3px 3px 4px gray;
+        background-color: honeydew;
+    }
+    #button1{
+        width: 100%;
+        padding: 10px;
+        cursor:pointer;
+    }
+    #bezels{
+        background-color: orange;
+        color: white;
+        text-align: center;
+        border: 5px solid orange;
+        border-radius: 5px;
+        box-shadow: -4px -4px 4px orange;
+    }
+
+    @media screen and (min-width: 100px) and (max-width: 600px) {
+        .des{
+           font-size: small;
+        }
+    }
+
+    @media screen and (min-width: 100px) and (max-width: 350px) {
+        .papaji{
+            display: flex;
+            justify-content:center;
+            margin-top: 4%;
+        }
+    }
+
+    @media screen and (min-width: 350px) and (max-width: 700px) {
+        .papaji{
+            margin-top: 4%;
+            display: flex;
+            justify-content: center;
+        }
+    }

@@ -1,0 +1,110 @@
+body{
+background-color:   #000000;
+}
+.slider{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    background-image: url('https://wallpapercave.com/wp/wp2149285.jpg');
+    background-size: 100% 100%;
+    transform: translate(-50%,-50%);
+    animation: slider 15s infinite linear;
+    /* opacity: 0.4; */
+}
+@keyframes slider{
+    0%{background-image: url('https://wallpapercave.com/wp/wp2149285.jpg');}
+    25%{background-image: url('https://wallpapercave.com/wp/wp2149312.png');}
+    45%{background-image: url('https://c4.wallpaperflare.com/wallpaper/412/647/653/gear-movement-pocket-rolex-wallpaper-preview.jpg');}
+    65%{background-image: url('https://wallpapercave.com/wp/wp2149416.png');}
+    85%{background-image: url('https://c4.wallpaperflare.com/wallpaper/573/388/43/watch-the-amazing-rolex-wallpaper-preview.jpg');}
+    100%{background-image: url('https://c4.wallpaperflare.com/wallpaper/890/553/221/man-made-watch-rolex-splash-wallpaper-preview.jpg');}
+}
+.welcome{
+    font-size: x-large;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+    
+}
+.page{
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: larger;
+}
+a.page:active {
+    color: red;
+
+}
+.offer{
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: red;
+    border-radius: 6px;
+    padding: 4px 4px;
+    display: inline-block;
+    transform: rotate(20deg);
+}
+.soon{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (min-width:100px) and (max-width:850px){
+    .slider{
+        margin-top: 25%;
+        width: 100%;
+        height: 500px;
+    }
+    .soon{
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .offer{
+        color: white;
+        font-size: large;
+        font-weight: 600;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color:red;
+        border-radius: 6px;
+        padding: 4px 4px; 
+        display: inline-block;
+        transform: rotate(0deg);
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width:400px) and (max-width:950px){
+    .slider{
+        margin-top: 25%;
+        width: 100%;
+        height: 500px;
+    }
+    .soon{
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .offer{
+        color: white;
+        font-size: large;
+        font-weight: 600;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-color:red;
+        border-radius: 6px;
+        padding: 4px 4px; 
+        display: inline-block;
+        transform: rotate(0deg);
+        margin-top: 3%;
+    }
+}

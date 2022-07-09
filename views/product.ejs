@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs')%>
+<script src="/javaScript/nav.js"></script>
+<link rel="stylesheet" href="/styles/navBar.css"/>
+<link rel="stylesheet" href="/styles/card.css" />
+<p>
+    <h1  class="our"> <marquee direction="down" id="our"> &#8986;Our product&#8986; </marquee></h1>
+    </p>
+    <div class="holeBody">
+        <% allProducts.forEach(function(item) {%>
+            <a href="/product/<%=item._id %>?id=<%=item._id %>">
+            <div class="card">
+                <div class="imgHolder">
+                    <img src="<%=item.img %>" alt="image">
+                </div>
+                <div class="menus">
+                    <div id="justIn">Just in </div>
+                    <div id="collections">Rolex Watches collection</div>
+                    <div class="menu-items">
+                      <span id="price">&#8377;<%=item.price%></span>
+                      <span id="star"><%=item.rating%>&#9734;</span>
+                    </div>
+                    <p class="des"> 
+                     <span id="now">
+                         Get it today,Now&#128521;</span>
+                        </span>
+                    </p>
+                    <h3 id="reviews"><%=item.reviews%>-Coustomers Review&#9989;</h3>
+                </div>
+            </div>
+            </a>
+        <%})%>
+        </div>
+    <%- include('partials/footer.ejs')%>

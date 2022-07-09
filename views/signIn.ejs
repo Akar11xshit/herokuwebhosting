@@ -1,0 +1,49 @@
+<script>
+    const userInformation=localStorage.getItem("userinfo")?
+    JSON.parse(localStorage.getItem("userinfo"))
+    :null;
+  
+  if(userInformation){
+    location.href="/product"
+  }
+  </script>
+
+<%- include('partials/header.ejs')%>
+<script src="/javaScript/nav.js"></script>
+<link rel="stylesheet"  href="/styles/navBar.css" />
+<link rel="stylesheet"  href="/styles/sign.css" />
+<div>
+    <div class="container">
+        <div class="col2">
+            <div class="formContainer">
+                <form  onsubmit="return handlesubmit()">
+                    <div class="logo">
+                        <img src="/images/r3.jpg" alt="logo">
+                    </div>
+                <h2 style="text-align: center;"  class="label">SignIn</h2>
+                <p class="msg"></p>
+                <label class="label">Email</label>
+                <input 
+                class="border" 
+                type="email" 
+                name="email" 
+                required 
+                placeholder="Enter your Eamil"  
+                oninput="validate(this)"/>
+                <label class="label">Password</label>
+                <input 
+                class="border" 
+                type="password" 
+                name="password" 
+                required   
+                placeholder="Enter Your Password "  
+                oninput="validate(this)"/>
+                <button type="submit" class="button">SignIn</button>
+                <div id="linkToSignup"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/javascript/signin.js"></script>
+<%- include('partials/footer.ejs')%>

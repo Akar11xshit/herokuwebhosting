@@ -1,0 +1,101 @@
+body{
+    background-color:#f6e9d7;;    
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 48%;
+    box-shadow: 3px 3px 4px grey;
+}
+#signup{
+    /* font-family: cursive; */
+    font-weight: bolder;
+}
+.label1{
+    /* font-family: cursive; */
+    font-weight: bold;
+
+}
+.input{
+    padding: 4px;
+}
+.button1{
+     padding-top: 7px;
+     padding-bottom: 7px;
+     background-color: white;
+     border:5px solid whitesmoke;
+     margin-top: 5px;
+     color: green;
+     border-radius: 8px;
+     
+}
+.button2{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: green;
+    border:5px solid green;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.button2 a{
+    text-decoration: none;
+    color: white;
+}
+.button2:hover{
+    box-shadow: 2px 2px 2px black;
+}
+.button1:hover{
+    box-shadow: 2px 2px 2px black;
+}
+.button1 a{
+    color: white;
+    text-decoration: none;
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 130px;
+    min-width: 280px;
+}
+.col3{
+    align-items: center;
+    background-color: whitesmoke;
+    width: 280px;
+    word-wrap: break-word;
+    padding-bottom: 10px;
+    box-shadow: 4px 4px 5px 2px grey;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border: 6px solid whitesmoke;
+    border-top-left-radius: 26px;
+}
+.formcontainer1 form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    margin: 3px
+}
+form input{
+    margin: 7px;
+}
+.msg{
+    color: red;
+    text-align: center;
+}
+
+.border1{
+    border-radius: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    box-shadow: 2px 2px 2px 2px grey; 
+    border: 2px solid whitesmoke;   
+}

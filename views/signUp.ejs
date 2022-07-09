@@ -1,0 +1,74 @@
+<script>
+    const userInformation=localStorage.getItem("userinfo")?
+    JSON.parse(localStorage.getItem("userinfo"))
+    :null;
+  
+  if(userInformation){
+    location.href="/product"
+  }
+  </script>
+
+
+<%- include('partials/header.ejs')%>
+<script src="/javaScript/nav.js"></script>
+<link rel="stylesheet"  href="/styles/navBar.css" />
+<link rel="stylesheet"  href="/styles/signUp.css" />
+
+<div>
+    <div class="container1">
+        <div class="col3">
+            <div class="formcontainer1">
+                <form onsubmit="return handlesubmit()">
+                    <div class="logo">
+                        <img src="/images/r3.jpg" alt="logo">
+                    </div>
+                    <h2 id="signup" style="text-align: center;">Register</h2>
+                    <p class="msg"></p>
+                    <label class="label1">Name</label>
+                    <input 
+                    class="border1" 
+                    type="text" 
+                    name="userName" 
+                    required 
+                    placeholder="enter your user name"
+                    class="input" 
+                    oninput="validate(this)"/>
+
+                    <label class="label1">Email</label>
+                    <input 
+                    class="border1" 
+                    type="email" 
+                    name="email" 
+                    required 
+                    placeholder="enter your email" 
+                    class="input" oninput="validate(this)"/>
+
+                    <label class="label1">Password</label>
+                    <input 
+                    class="border1" 
+                    type="password" 
+                    name="password" 
+                    required 
+                    placeholder="enter your password"
+                    class="input" 
+                    oninput="validate(this)"/>
+
+                    <label class="label1">Comfirm password</label>
+                    <input 
+                    class="border1" 
+                    type="password" 
+                    name="confirmPassword" 
+                    required 
+                    placeholder="comfirm password" 
+                    class="input" 
+                    oninput="validate(this)"/>
+                        
+                    <button class="button1" type="submit">signUp</button>
+                    <p class="label1"> if you have already account?</p><button class="button2"><a href="/signIn">SignIn</a></button>
+                </form>                                                             
+            </div>
+        </div>
+    </div>
+</div> 
+<script src="/javascript/signup.js"></script>
+<%- include('partials/footer.ejs')%>

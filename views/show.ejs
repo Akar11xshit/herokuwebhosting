@@ -1,0 +1,56 @@
+<%- include('partials/header.ejs')%>
+<script src="/javaScript/nav.js"></script>
+<link rel="stylesheet" href="/styles/navBar.css"/>
+<link rel="stylesheet" href="/styles/show.css"/>
+
+<div class="showContainer">
+    <div class="col2">
+        <img  src="<%= sp.img %>" />
+    </div>
+    <div class="col1">
+        <div class="desContainer">
+              <div class="row1">
+                  <span class="name"><%=sp.name%></span>
+              </div>
+              <div class="priceRating">
+                <span id="price1">&#8377;<%=sp.price%></span>
+                <span id="star1"><%=sp.rating%>&#9734;&#9734;&#9734;&#9734;&#9734;</span>
+              </div>
+              <span id="taxes">Inclusivse all taxes</span>
+              <h3 class="reviews1">
+                  <%=sp.reviews%>-Coustomers Review&#9989;
+              </h3>
+             <h3 id="description">Description:-&#128071;&#128071;</h3> <p class="des"><%= sp.des %></p>
+             <div>
+                <h3 id="bezels"> <marquee direction="right">Know more about calibre:-</marquee></h3><span class="des"><%=sp.calibre %></span>
+             </div>
+        </div>
+    </div>
+</div>
+
+<div class="papaji">
+    <div class="papaji1">
+        <div class="row">
+            <p id="prices">price:-</p>
+            <p id="price2">&#8377;<%=sp.price %> </p>
+        </div>
+        <div class="row1">
+            <div class="selector">
+            <p id="qty">qty:-</p>
+            <select class="option" id="qty1" onchange="selectQty(this)">
+                <% for(i=1;i<=sp.qtyInStock;i++){%>
+                   <option  value=<%= i %>><%= i %></option>
+                <%}%>
+            </select>
+            </div>
+            <div>
+            <button id="button1" type="button"  
+                    onclick="addToCart()"> Add to cart 
+            </button>
+              </div>
+        </div>
+    </div>
+</div>
+
+<script src="/javascript/show.js"></script>
+<%- include('partials/footer.ejs')%>

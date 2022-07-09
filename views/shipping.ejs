@@ -1,0 +1,73 @@
+<%- include('partials/header.ejs')%>
+<script src="/javaScript/nav.js"></script>
+<link rel="stylesheet" href="/styles/navBar.css"/>
+<link rel="stylesheet" href="/styles/shipping.css"/>
+<div>
+    <div class="container">
+        <div class="col2">
+            <div class="formContainer">
+                <form  onsubmit="return handlesubmit()">
+                    <div class="logo">
+                        <img src="/images/r3.jpg" alt="logo">
+                    </div>
+                <h2 style="text-align: center;"  class="label">Shipping Address</h2>
+                <p class="msg"></p>
+                <label class="label">Name</label>
+                <input 
+                class="border" 
+                type="text" 
+                name="name" 
+                required 
+                placeholder="Enter your user name"  
+                oninput="validate(this)"/>
+                <label class="label">Address</label>
+                <input 
+                class="border" 
+                type="text" 
+                name="address" 
+                required 
+                placeholder="address "  
+                oninput="validate(this)"/>
+                <label class="label">City</label>
+                <input 
+                class="border" 
+                type="text" 
+                name="city" 
+                required 
+                placeholder="Enter your city name"  
+                oninput="validate(this)"/>
+                <label class="label">Contact</label>
+                <input 
+                class="border" 
+                type="number" 
+                name="contact" 
+                required 
+                placeholder="Enter your contact number" 
+                oninput="validate(this)"/>
+                <div class="padd">
+                    <p id="phone">phone number must be of 10 digit </p>
+                </div>
+                <label class="label">Postal Code</label>
+                <input 
+                class="border" 
+                type="number" 
+                name="postalcode" 
+                required 
+                placeholder="Enter your postal code"  
+                oninput="validate(this)"/>
+                <label class="label">Country</label>
+                <input 
+                class="border" 
+                type="text" 
+                name="country" 
+                required 
+                placeholder="Enter your country name"  
+                oninput="validate(this)"/>
+                <button type="submit" class="button">Continue</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/javascript/shipping.js"></script>
+<%- include('partials/footer.ejs')%>
